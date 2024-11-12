@@ -52,7 +52,7 @@ def delete_member_by_id(id):
     return jsonify({"msg":"not found"}), 404
 
     
-# this only runs if `$ python src/app.py` is executed
+# this only runs if  `$ python src/app.py` is executed
 if __name__ == '__main__':
     PORT = int(os.environ.get('PORT', 3000))
     app.run(host='0.0.0.0', port=PORT, debug=True)
