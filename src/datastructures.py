@@ -1,3 +1,4 @@
+
 """
 update this file to implement the following already declared methods:
 - add_member: Should add a member to the self._members list
@@ -54,6 +55,12 @@ class FamilyStructure:
         for index in range(0, len(self._members)):
             if self._members[index].get("id") == id:
                 return self._members.pop(index)
+        return None
+
+    def get_member(self, id):
+        for member in self._members:
+            if member.get("id") == id:
+                return member
         return None
 
     # this method is done, it returns a list with all the family members
